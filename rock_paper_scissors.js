@@ -32,7 +32,7 @@ const game = function () {
 			playerSelection !== "Scissors"
 		) {
 			alert("Invalid selection. Please choose rock, paper, or scissors :)");
-			// ++i;
+			i--;
 			continue;
 		}
 		let computerSelection = computerPlay();
@@ -42,9 +42,11 @@ const game = function () {
 		console.log(x);
 		if (x.includes("win") && !x.includes("draw")) playerScore++;
 		if (x.includes("lose") && !x.includes("draw")) compScore++;
+
+		console.log(compScore, playerScore);
 	}
 	if (compScore !== playerScore)
-		return compScore > playerScore
+		return compScore < playerScore
 			? "You win the game!"
 			: "You lose! The computer beat you!";
 
