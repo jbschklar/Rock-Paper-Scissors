@@ -5,8 +5,13 @@
 
 h1 {
 	text-align: center;
+	margin-top: 64px;
 }
 
+h2 {
+	font-size: 18px;
+	text-decoration: underline;
+}
 .container {
 	padding: 92px;
 	display: flex;
@@ -23,17 +28,13 @@ h1 {
 	gap: 32px;
 }
 
-.score-board {
-	/* margin: 32px 0; */
-}
-
 .results {
 	width: 250px;
 	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 64px;
+	gap: 32px;
 }
 
 .scores {

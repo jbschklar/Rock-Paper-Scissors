@@ -25,9 +25,9 @@ const computerPlay = function () {
 const playerRound = function (playerSelection) {
 	const a = playerSelection;
 	const b = computerPlay();
-	const winPlayer = `win! ${a} beats ${b}!`;
-	const winComputer = `lose! ${b} beats ${a}!`;
-	if (a === b) return "It's a draw!";
+	const winPlayer = `win the round. ${a} beats ${b}.`;
+	const winComputer = `lose the round. ${b} beats ${a}.`;
+	if (a === b) return "It's a draw.";
 	if (a === "Rock") return `You ${b === "Scissors" ? winPlayer : winComputer}`;
 	if (a === "Paper") return `You ${b === "Scissors" ? winComputer : winPlayer}`;
 	return `You ${b === "Rock" ? winComputer : winPlayer}`;
@@ -46,10 +46,10 @@ const finalResult = function (score1, score2) {
 		reset();
 		if (score1 !== score2)
 			return score1 < score2
-				? "You win the game!"
-				: "You lose! The computer beat you!";
+				? "You win the game."
+				: "You lose. The computer beat you.";
 
-		return "It's a draw!";
+		return "The game is a draw.";
 	}
 };
 
