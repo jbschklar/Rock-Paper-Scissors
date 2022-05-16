@@ -3,9 +3,22 @@
 	padding: 0;
 }
 
-.btns {
-	margin: 32px 0;
+h1 {
+	text-align: center;
+}
+
+.container {
+	padding: 92px;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 64px;
+}
+
+.btns {
+	margin: 32px;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	gap: 32px;
 }
@@ -15,6 +28,8 @@
 }
 
 .results {
+	width: 250px;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
